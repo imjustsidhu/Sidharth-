@@ -1,95 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidharth Murali</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-            color: #333;
-            text-align: center;
-        }
-        header {
-            padding: 2rem 1rem;
-        }
-        header img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid #333;
-        }
-        h1 {
-            margin-top: 1rem;
-            font-size: 2.5rem;
-        }
-        p {
-            font-size: 1.2rem;
-            margin: 1rem auto;
-            max-width: 600px;
-        }
-        a.button {
-            display: inline-block;
-            margin-top: 1.5rem;
-            padding: 0.8rem 2rem;
-            background: #333;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 30px;
-            font-size: 1rem;
-        }
-        section {
-            padding: 2rem 1rem;
-        }
-        ul.anime-list {
-            list-style: none;
-            padding: 0;
-            font-size: 1.1rem;
-        }
-        ul.anime-list li {
-            padding: 0.3rem 0;
-        }
-        footer {
-            margin-top: 3rem;
-            font-size: 0.9rem;
-            color: #777;
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-            p {
-                font-size: 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidharth Murali - Anime Lover & True Friend</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #000;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      background: #e6ecf3;
+    }
+    .hero-text {
+      max-width: 500px;
+      text-align: left;
+      margin-right: 2rem;
+    }
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      background: #ff5e5e;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+    .hero-img img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+    section.anime {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .anime h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    .anime-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 1.2rem;
+    }
+    .anime-list div {
+      background: #fff;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #fff;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+      .hero-text {
+        text-align: center;
+        margin-right: 0;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <img src="IMG-20250424-WA0022.jpg" alt="Sidharth Murali">
-    <h1>Sidharth Murali</h1>
-    <p>I'm a selfless, caring, true friend. <br> Big anime lover!</p>
-    <a class="button" href="https://instagram.com/imjustsidhu" target="_blank">Follow me on Instagram</a>
+  <div class="logo">Sid</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#anime">Anime</a>
+    <a href="https://instagram.com/imjustsidhu" target="_blank">Instagram</a>
+  </nav>
 </header>
 
-<section>
-    <h2>My Top Anime Picks</h2>
-    <ul class="anime-list">
-        <li>ONE PIECE</li>
-        <li>Naruto</li>
-        <li>Solo Leveling</li>
-        <li>Grand Blue</li>
-        <li>Fire Fighter</li>
-    </ul>
+<section class="hero" id="home">
+  <div class="hero-text">
+    <span style="background: #d7e8ff; padding: 5px 10px; border-radius: 20px; font-size: 0.9rem;">It's me</span>
+    <h1>Sidharth Murali</h1>
+    <p>Selfless, caring, a true friend who loves anime worlds more than anything else.</p>
+    <a href="https://instagram.com/imjustsidhu" target="_blank" class="btn">Follow Me</a>
+  </div>
+  <div class="hero-img">
+    <img src="IMG-20250424-WA0022.jpg" alt="Sidharth Murali">
+  </div>
+</section>
+
+<section class="anime" id="anime">
+  <h2>My Top Anime Picks</h2>
+  <div class="anime-list">
+    <div>ONE PIECE</div>
+    <div>Naruto</div>
+    <div>Solo Leveling</div>
+    <div>Grand Blue</div>
+    <div>Fire Force</div>
+  </div>
 </section>
 
 <footer>
-    <p>&copy; 2025 Sidharth Murali. Made with love.</p>
+  <p>&copy; 2025 Sidharth Murali. All rights reserved.</p>
 </footer>
 
 </body>
